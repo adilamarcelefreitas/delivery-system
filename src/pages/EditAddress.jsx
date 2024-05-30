@@ -27,7 +27,7 @@ const EditAddress = () => {
 
   return (
     <div className="edit">
-      <h2>EDIÇÃO DO ENDEREÇO</h2>
+      <h2>ADDRESS EDIT</h2>
       <AddressForm initialData={address} onSubmit={handleEdit} />
     </div>
   );

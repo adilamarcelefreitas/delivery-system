@@ -1,20 +1,22 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AddressContext } from '../context/AddressContext';
-import './AddressList.css';
+import '../components/AddressList.css';
 
 const AddressList = () => {
   const { addresses } = useContext(AddressContext);
 
   return (
     <div className="list-box">
-      <h2>Listas de Endereços</h2>
-      <Link to="/register"> Novo Endereço</Link>
+      <div className="header-list">
+      <h2>ADDRESSES 🚀</h2>
+      <Link to="/register"> + new address</Link>
+      </div>
       <ul>
         {addresses.map(address => (
           <li key={address.id}>
             {address.planet === 'Mars' ? `Lote: ${address.location}` : `${address.name}, ${address.street}, ${address.city}, ${address.zipCode}`}
-            <Link to={`/edit/${address.id}`}> EDITAR</Link>
+            <Link to={`/edit/${address.id}`}>edit</Link>
           </li>
         ))}
       </ul>

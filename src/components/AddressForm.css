@@ -1,22 +1,85 @@
 form {
+   
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 200px;
     margin: auto;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black; 
 }
 
-input, select {
-    padding: 0.5em;
-    font-size: 1em;
+.register h1 {
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'OriginTech', sans-serif;
+    color: #02121f;
+
+}
+
+.register h2 {
+    margin-top: 5rem;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family:  sans-serif;
     color: black;
-  }
+
+}
+
+.planetOption select {
+
+    display: flex;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+
+}
+
+planetOption::after {
+    content: '\25BC'; /* Seta para baixo */
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Centraliza verticalmente */
+    right: 10px; /* Afasta da direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    pointer-events: none; /* Não interfere na seleção */
+    color: #333; /* Cor da seta */
+}
+
+.planetOption select option {
+    
+    color: #333; /* Cor do texto dos itens */
+}
+
 
 button{
-    color: red;
-    background-color: black;
+    margin-top: 25px;;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.4em;
+    color: black;
+    border-radius: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, 
+    rgba(34,193,195,1) 0%, 
+    rgba(201,170,101,1) 100%);
+
 }
 
+select, button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 

@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AddressForm from '../components/AddressForm';
 import { AddressContext } from '../context/AddressContext';
+import '../components/AddressForm';
+
 
 const RegisterAddress = () => {
   const { addAddress } = useContext(AddressContext);
@@ -14,7 +16,8 @@ const RegisterAddress = () => {
 
   return (
     <div className="register">
-      <h2>CADASTRAR ENDEREÇO</h2>
+      <h1>PLANET DELIVERY </h1>
+      <h2>Click bellow and choose your planet for delivery</h2>
       <AddressForm onSubmit={handleRegister} />
     </div>
   );

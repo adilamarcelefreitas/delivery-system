@@ -22,7 +22,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
     if (address.planet === 'Mars') {
       return /^\d{4}$/.test(address.location);
     } else if (address.planet === 'Earth') {
-      return address.name && address.street && address.city && address.zipCode;
+      return address.name && address.street && address.country && address.zipCode;
     }
     return false;
   };
@@ -32,9 +32,9 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
       <div className="planetOption">
         <label htmlFor="planet"></label>
         <select id="planet" name="planet" value={address.planet} onChange={handleChange} required>
-          <option value="">Qual planeta?</option>
-          <option value="Earth">TERRA</option>
-          <option value="Mars">MARTE</option>
+          <option id="choice" value="">click here!</option>
+          <option id="choice" value="Earth">Terra</option>
+          <option id="choice" value="Mars">Marte</option>
         </select>
       </div>
       {address.planet === 'Mars' && (
@@ -44,7 +44,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
             type="text"
             id="location"
             name="location"
-            placeholder="ROTA"
+            placeholder="Lote"
             value={address.location}
             onChange={handleChange}
             pattern="\d{4}"
@@ -55,7 +55,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
       {address.planet === 'Earth' && (
         <>
           <div className="customer"> 
-            <label htmlFor="name">NOME</label>
+            <label htmlFor="name">nome</label>
             <input
               type="text"
               id="name"
@@ -66,7 +66,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
             />
           </div>
           <div className="customerAddress">
-            <label htmlFor="street">ENDEREÇO</label>
+            <label htmlFor="street">endereço</label>
             <input
               type="text"
               id="street"
@@ -76,13 +76,13 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div className="city">
-            <label htmlFor="city">CIDADE</label>
+          <div className="country">
+            <label htmlFor="country">país</label>
             <input
               type="text"
-              id="city"
-              name="city"
-              value={address.city || ''}
+              id="country"
+              name="country"
+              value={address.country || ''}
               onChange={handleChange}
               required
             />
@@ -100,7 +100,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
           </div>
         </>
       )}
-      <button type="submit">CADASTRAR</button>
+      <button type="submit">submit</button>
     </form>
   );
 };
