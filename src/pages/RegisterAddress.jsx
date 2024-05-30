@@ -13,8 +13,8 @@ const RegisterAddress = () => {
   };
 
   return (
-    <div>
-      <h2>Register Address</h2>
+    <div className="register">
+      <h2>CADASTRAR ENDEREÇO</h2>
       <AddressForm onSubmit={handleRegister} />
     </div>
   );

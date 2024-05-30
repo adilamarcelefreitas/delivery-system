@@ -26,8 +26,8 @@ const EditAddress = () => {
   if (!address) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h2>Edit Address</h2>
+    <div className="edit">
+      <h2>EDIÇÃO DO ENDEREÇO</h2>
       <AddressForm initialData={address} onSubmit={handleEdit} />
     </div>
   );

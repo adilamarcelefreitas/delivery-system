@@ -29,7 +29,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="planetOption">
         <label htmlFor="planet"></label>
         <select id="planet" name="planet" value={address.planet} onChange={handleChange} required>
           <option value="">SELECIONE PLANETA</option>
@@ -38,7 +38,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
         </select>
       </div>
       {address.planet === 'Mars' && (
-        <div>
+        <div className="route">
           <label htmlFor="location"></label>
           <input
             type="text"
@@ -54,7 +54,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
       )}
       {address.planet === 'Earth' && (
         <>
-          <div>
+          <div className="customer"> 
             <label htmlFor="name">NOME</label>
             <input
               type="text"
@@ -65,7 +65,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div>
+          <div className="customerAddress">
             <label htmlFor="street">ENDEREÇO</label>
             <input
               type="text"
@@ -76,7 +76,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div>
+          <div className="city">
             <label htmlFor="city">CIDADE</label>
             <input
               type="text"
@@ -87,7 +87,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div>
+          <div className="cep">
             <label htmlFor="zipCode">CEP</label>
             <input
               type="text"
