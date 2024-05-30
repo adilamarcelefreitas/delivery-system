@@ -7,9 +7,9 @@ const AddressList = () => {
   const { addresses } = useContext(AddressContext);
 
   return (
-    <div className="list">
-      <h2>ENDEREÇOS</h2>
-      <Link to="/register">Novo Endereço</Link>
+    <div className="list-box">
+      <h2>Listas de Endereços</h2>
+      <Link to="/register"> Novo Endereço</Link>
       <ul>
         {addresses.map(address => (
           <li key={address.id}>

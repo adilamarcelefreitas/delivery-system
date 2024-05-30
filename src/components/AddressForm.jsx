@@ -32,7 +32,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
       <div className="planetOption">
         <label htmlFor="planet"></label>
         <select id="planet" name="planet" value={address.planet} onChange={handleChange} required>
-          <option value="">SELECIONE PLANETA</option>
+          <option value="">Qual planeta?</option>
           <option value="Earth">TERRA</option>
           <option value="Mars">MARTE</option>
         </select>

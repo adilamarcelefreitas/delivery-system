@@ -1,12 +1,24 @@
 
-.list{
-    background-color: orange;
-    flex-direction: collum;
+.list-box {
+    
+    position: relative;
+    background-color: white;
+    justify-content: center; 
+    border: 1px solid;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 15px;
+    font-size: 20px;
+
 }
 
-.list h2 {
-    background-color: blue;
-    /* display: flex; */ 
+.list-box h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
 }
 
 

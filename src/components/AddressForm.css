@@ -1,20 +1,17 @@
-* { font-family: 'Segoe UI', Roboto,
-     'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
-
 form {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 input, select {
-    background-color: pink;
     padding: 0.5em;
     font-size: 1em;
-    color: yellow;
+    color: black;
   }
 
 button{
