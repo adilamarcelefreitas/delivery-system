@@ -1,0 +1,17 @@
+.register h1 {
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'OriginTech', sans-serif;
+    color: black;
+    word-wrap: break-word;
+    animation: glow 1.5s infinite alternate;
+}
+
+.register h2 {
+    display: flex;
+    font-size: 5px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}

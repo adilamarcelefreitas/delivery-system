@@ -14,77 +14,39 @@ label {
     font-size: 15px;
 }
 
-.edit h2 {
-    margin-top: 4rem;
-    display: flex;
-    font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    color: #02121f;
 
-}
-
-.register h1 {
-    display: flex;
-    font-size: 3rem;
-    align-items: center;
-    justify-content: center;
-    font-family: 'OriginTech', sans-serif;
-    color: black;
-    word-wrap: break-word;
-    animation: glow 1.5s infinite alternate;
-}
-
-.register h2 {
-    display: flex;
-    font-size: 5px;
-    font-family: "Montserrat", sans-serif;
-    color: black;
-}
-
-.planetOption select, 
-input {
-   
+.selectPlanet, input {
     display: flex;
     background-color: rgba(19, 17, 17, 0.7);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     margin-bottom: 10px;
-    align-items: center;
     padding: 4px;
     border: none;
-    border-radius: 5px;
-    font-size: 15px;
+    font-size: 10px;
     cursor: pointer;
-    color: white;
+    color: white; 
+    border-radius: 5px;
 }
-
 
 button {
     margin-top: 25px;
     cursor: pointer;
-    align-items: center;
     justify-content: center;
     place-items: center;
-    width: 6rem;
-    height: 2rem;
-    font-size: 0.5em;
-    font-weight: bolder;
-    color: #02121f;
+    padding: 5px;
+    font-size: 0.1rem;
+    color: white;
     border-style: none;
-    border-radius: 10px;
-    background: rgb(45, 34, 195);
-    background: linear-gradient(0deg, 
-    rgb(164, 182, 204) 0%, 
-    rgb(107, 40, 170) 100%);
-
+    border-radius: 5px;
+    background: rgb(30, 29, 41); 
+  
 }
 
 select, button, label, input {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 @keyframes glow {

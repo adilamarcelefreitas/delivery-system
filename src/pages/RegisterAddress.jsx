@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import AddressForm from '../components/AddressForm';
 import { AddressContext } from '../context/AddressContext';
 import '../components/AddressForm';
+import '../components/RegisterAddress.css'
 
 
 const RegisterAddress = () => {

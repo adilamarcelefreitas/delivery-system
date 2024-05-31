@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import AddressForm from '../components/AddressForm';
 import { AddressContext } from '../context/AddressContext';
+import '../components/EditAddress.css'
 
 const EditAddress = () => {
   const { id } = useParams();
@@ -26,11 +27,10 @@ const EditAddress = () => {
   if (!address) return <div>Loading...</div>;
 
   return (
-    <div className="edit">
-      <h2>Address Edit</h2>
+    <><div className="edit">
+      <h2>Editing address</h2>
       <p>Check your infomations again and submit </p>
-      <AddressForm initialData={address} onSubmit={handleEdit} />
-    </div>
+    </div><AddressForm initialData={address} onSubmit={handleEdit} /></>
   );
 };
 

@@ -1,0 +1,26 @@
+
+.edit {
+    background-color: rgba(19, 17, 17, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.edit h2 {
+    
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.edit p{
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+}

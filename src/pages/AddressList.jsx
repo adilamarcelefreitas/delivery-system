@@ -14,26 +14,26 @@ const AddressList = () => {
       </div>
       <ul>
         {addresses.map(address => (
-          <React.Fragment key={address.id}>
+          <div className="address-container" key={address.id}>
             {address.planet === 'Mars' ? (
               <>
-                <li>{`${address.planet}`}</li>
-                <li>{`${address.location}`}</li>
+                <li>{`Planet: ${address.planet}`}</li>
+                <li>{`Location: ${address.location}`}</li>
               </>
             ) : (
               <>
-                <li>{`${address.planet}`}</li>
-                <li>{`${address.name}`}</li>
-                <li>{`${address.street}`}</li>
-                <li>{`${address.city}`}</li>
-                <li>{`${address.country}`}</li>
-                <li>{`${address.zipCode}`}</li>
+                <li>{`Planet: ${address.planet}`}</li>
+                <li>{`Name: ${address.name}`}</li>
+                <li>{`Street: ${address.street}`}</li>
+                <li>{`City: ${address.city}`}</li>
+                <li>{`Country: ${address.country}`}</li>
+                <li>{`Zip Code: ${address.zipCode}`}</li>
               </>
             )}
             <li>
               <Link to={`/edit/${address.id}`}>edit</Link>
             </li>
-          </React.Fragment>
+          </div>
         ))}
       </ul>
     </div>
