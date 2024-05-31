@@ -1,12 +1,29 @@
 form {
-   
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    padding: 45px;
+    max-width: 220px;
     margin: auto;
     justify-content: center;
     align-items: center;
-    color: black; 
+    color: #02121f;
+    border-style:none;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.edit h2 {
+    margin-top: 4rem;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #02121f;
+
 }
 
 .register h1 {
@@ -16,70 +33,58 @@ form {
     justify-content: center;
     font-family: 'OriginTech', sans-serif;
     color: #02121f;
-
 }
 
 .register h2 {
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     font-size: 1.5rem;
     align-items: center;
     justify-content: center;
-    font-family:  sans-serif;
-    color: black;
-
+    font-family: sans-serif;
+    color: #02121f;
 }
 
-.planetOption select {
-
+.planetOption select, 
+input {
+   
     display: flex;
-    background-color: transparent;
+    background-color: rgba(19, 17, 17, 0.5);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 6px;
     border: none;
+    border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
-    color: black;
-
-}
-
-planetOption::after {
-    content: '\25BC'; /* Seta para baixo */
-    position: absolute; /* Posicionamento absoluto */
-    top: 50%; /* Centraliza verticalmente */
-    right: 10px; /* Afasta da direita */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    pointer-events: none; /* Não interfere na seleção */
-    color: #333; /* Cor da seta */
-}
-
-.planetOption select option {
-    
-    color: #333; /* Cor do texto dos itens */
+    /* color: white; */
 }
 
 
-button{
-    margin-top: 25px;;
+button {
+    margin-top: 25px;
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
+    place-items: center;
     width: 6rem;
     height: 2rem;
-    font-size: 0.4em;
-    color: black;
+    font-size: 0.5em;
+    font-weight: bolder;
+    color: #02121f;
+    border-style: none;
     border-radius: 10px;
-    background: rgb(34,193,195);
+    background: rgb(45, 34, 195);
     background: linear-gradient(0deg, 
-    rgba(34,193,195,1) 0%, 
-    rgba(201,170,101,1) 100%);
+    rgb(164, 182, 204) 0%, 
+    rgb(107, 40, 170) 100%);
 
 }
 
-select, button {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+select, button, label, input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
-

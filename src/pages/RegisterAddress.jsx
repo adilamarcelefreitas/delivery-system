@@ -17,7 +17,7 @@ const RegisterAddress = () => {
   return (
     <div className="register">
       <h1>PLANET DELIVERY </h1>
-      <h2>Click bellow and choose your planet for delivery</h2>
+      <h2>Click bellow and choose your planet for delivery and register</h2>
       <AddressForm onSubmit={handleRegister} />
     </div>
   );

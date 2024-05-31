@@ -3,19 +3,26 @@
     
     position: relative;
     justify-content: center; 
-    height: 20rem;
-    width: 15rem;
+    height: 30rem;
+    width: 20rem;
     border-radius: 15px;
     font-size: 20px;
+    background-color: red;
+    padding: auto;
 }
 
 .list-box h2 {
-    font-size: 20px;
+    
+    background-color: blue;
+    
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
+
+
 
 
 

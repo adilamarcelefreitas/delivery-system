@@ -9,7 +9,7 @@ const AddressList = () => {
   return (
     <div className="list-box">
       <div className="header-list">
-      <h2>ADDRESSES 🚀</h2>
+      <h2>Address🚀</h2>
       <Link to="/register"> + new address</Link>
       </div>
       <ul>
