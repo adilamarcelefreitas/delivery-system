@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./AddressForm.css"
+import "../index.css"
 
 const AddressForm = ({ initialData = {}, onSubmit }) => {
   const [address, setAddress] = useState(initialData);
@@ -28,7 +29,6 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
   };
 
   return (
-    <div className="wrapper">
     <form onSubmit={handleSubmit}>
       <div className="planetOption">
         <label htmlFor="planet"></label>
@@ -123,7 +123,6 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
         </>
       )}
     </form>
-    </div>
   );
 };
 

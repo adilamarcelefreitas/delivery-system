@@ -14,13 +14,13 @@ const EditAddress = () => {
     if (addr) {
       setAddress(addr);
     } else {
-      navigate('/');
+      navigate('/list');
     }
   }, [id, getAddressById, navigate]);
 
   const handleEdit = (updatedAddress) => {
     updateAddress(updatedAddress);
-    navigate('/');
+    navigate('/list');
   };
 
   if (!address) return <div>Loading...</div>;

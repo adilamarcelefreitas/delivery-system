@@ -11,7 +11,7 @@ const RegisterAddress = () => {
 
   const handleRegister = (address) => {
     addAddress(address);
-    navigate('/');
+    navigate('/list');
   };
 
   return (
