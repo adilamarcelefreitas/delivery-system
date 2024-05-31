@@ -15,7 +15,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
     if (validateAddress(address)) {
       onSubmit(address);
     } else {
-      alert('Endereço inválido, reveja seu planeta.');
+      alert('Invalid address. Please review the filled fields.');
     }
   };
 
@@ -39,8 +39,8 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
         </select>
       </div>
       {address.planet === 'Mars' && (
-        <div className="route">
-          <label htmlFor="name">Recipient</label>
+        <div>
+          {/* <label htmlFor="name">Recipient</label>
             <input
               type="text"
               id="name"
@@ -48,7 +48,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               value={address.name || ''}
               onChange={handleChange}
               required
-            />
+            /> */}
           <label htmlFor="location">Route Number</label>
           <input
             type="text"
@@ -65,7 +65,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
       )}
       {address.planet === 'Earth' && (
         <>
-          <div className="customer"> 
+          <div> 
             <label htmlFor="name">Recipient</label>
             <input
               type="text"
@@ -76,7 +76,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div className="customerAddress">
+          <div>
             <label htmlFor="street">Address Line</label>
             <input
               type="text"
@@ -86,7 +86,8 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               onChange={handleChange}
               required
             />
-          </div><div className="city">
+          </div>
+          <div>
             <label htmlFor="city">City</label>
             <input
               type="text"
@@ -97,7 +98,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div className="country">
+          <div>
             <label htmlFor="country">Country</label>
             <input
               type="text"
@@ -108,7 +109,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               required
             />
           </div>
-          <div className="cep">
+          <div>
             <label htmlFor="zipCode">Zip/Postal Code</label>
             <input
               type="text"

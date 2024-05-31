@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'OriginTech';
-    src: url('./assets/fonts/Roboridge/OriginTech.ttf') format('truetype');
+    src: url('./assets/fonts/Roboridge/OriginTech.otf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -33,6 +33,7 @@ body {
 }
 
 a {
+    color:white;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -40,5 +41,5 @@ a {
 }
 
 a:hover {
-    color: rgb(58, 3, 58);
+    color: orangered;
   }
