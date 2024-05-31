@@ -11,7 +11,6 @@ const App = () => {
     <AddressProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<AddressList />} />
           <Route path="/list" element={<AddressList />} />
           <Route path="/register" element={<RegisterAddress />} />
           <Route path="/edit/:id" element={<EditAddress />} />

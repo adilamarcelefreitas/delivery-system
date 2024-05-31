@@ -59,7 +59,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
             pattern="\d{4}"
             required
           />
-           <div className="submitButton"><button type="button">submit</button></div>
+           <div className="submitButton"><button type="submit">submit</button></div>
         </div>
         
       )}
@@ -119,7 +119,7 @@ const AddressForm = ({ initialData = {}, onSubmit }) => {
               onChange={handleChange}
               required
             />
-        <div className="submitButton"><button type="button">submit</button></div>
+        <div className="submitButton"><button type="submit">submit</button></div>
           </div>
         </>
       )}
