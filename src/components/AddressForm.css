@@ -30,7 +30,7 @@ label {
     border-radius: 5px;
 }
 
-button {
+button  {
     margin-top: 25px;
     cursor: pointer;
     justify-content: center;
@@ -42,6 +42,14 @@ button {
     border-radius: 5px;
     background: rgb(30, 29, 41); 
   
+}
+
+.submitButton{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
 }
 
 select, button, label, input {
